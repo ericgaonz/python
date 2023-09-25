@@ -13,6 +13,6 @@ def generate_numbered_image(number, output_path):
     # 保存图像
     image.save(output_path)
 
-for i in range(1, 186):
+for i in range(1, 3):
     strNumber = '%03d' % i
     generate_numbered_image(strNumber, './images/TICKET-NO.%s.jpg' % strNumber)
