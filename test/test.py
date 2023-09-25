@@ -892,38 +892,67 @@
 
 
 
-lst = [1,2,3,1,2,3,4,5,6,4,4,4,4,4,4,4,4,4,4,6,7,5,8,9,0]
-newlst = []
+# lst = [1,2,3,1,2,3,4,5,6,4,4,4,4,4,4,4,4,4,4,6,7,5,8,9,0]
+# newlst = []
 
-for x in lst:
-    if x not in newlst:
-        newlst.append(x)
+# for x in lst:
+#     if x not in newlst:
+#         newlst.append(x)
 
-print(newlst)
+# print(newlst)
     
 
 
-# def removeDuplicates(lst):
-#     newlst = []
-#     for x in lst:
-#         if x not in newlst:
-#             newlst.append(x)
+# # def removeDuplicates(lst):
+# #     newlst = []
+# #     for x in lst:
+# #         if x not in newlst:
+# #             newlst.append(x)
 
-#     return newlst
-
-
-# # myLst = removeDuplicates(lst)
-# # print(myLst)
+# #     return newlst
 
 
-# print(removeDuplicates([1,2,3,2,3,4,534,34,56,67,68,67]))
+# # # myLst = removeDuplicates(lst)
+# # # print(myLst)
 
 
-# myset = {1,4,3,2,5,2,3,4,5,6,74,7}
-# print(myset)
-
-lst = list(set(lst))
-print(lst)
+# # print(removeDuplicates([1,2,3,2,3,4,534,34,56,67,68,67]))
 
 
-# set(lst)
+# # myset = {1,4,3,2,5,2,3,4,5,6,74,7}
+# # print(myset)
+
+# lst = list(set(lst))
+# print(lst)
+
+
+# # set(lst)
+
+
+# def printall(name, age, email):
+#     print('%s is stupid, and you are %d, your email is %s.' % (name, age, email))
+
+
+# name = input('Please input your name: ')
+# age = int(input('How old are you? '))
+# email = input('Please insert your email: ')
+
+# printall(name, age, email)
+# printall('Christina', 13, 'christina.chen@gmail.com')
+
+# # print(name, 'is stupid, and you are', age, ', your email is', email, '.')
+# # print('%s is stupid, and you are %d, your email is %s.' % (name, age, email))
+# # print(f"{name} is stupid, and you are {age}, your email is {email}.")
+
+
+
+# for x in range(1, 8):
+#     # if x in (6, 7): break
+#     if x == 6 or x == 7: break
+#     if x == 4: continue
+#     for y in range(1, 10):
+#         if y == 4: continue
+#         print(f"{x} 0 {y}", end='\t')
+#     print()
+
+
