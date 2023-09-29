@@ -956,3 +956,28 @@
 #     print()
 
 
+a = int(input('a= '))
+b = int(input('b= '))
+
+# if a > b:
+#     print('Yeah!!!!')
+# else:
+#     print('No!!!!')
+
+# print('Yeah!!!!') if a > b else print('No!!!!')
+
+#option 1, code1 if condition else codes2
+#option 2, variable = result1 if condition else result2
+
+# levels = floors + 2 if not isFourIncluded else floors + 1
+
+s = 0
+
+# if a + b > 40:
+#     s = a + b
+# else:
+#     s = a - b
+
+s = a + b if a + b > 40 else a - b
+
+print(s)
