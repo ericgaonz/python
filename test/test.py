@@ -956,9 +956,6 @@
 #     print()
 
 
-a = int(input('a= '))
-b = int(input('b= '))
-
 # if a > b:
 #     print('Yeah!!!!')
 # else:
@@ -971,13 +968,43 @@ b = int(input('b= '))
 
 # levels = floors + 2 if not isFourIncluded else floors + 1
 
-s = 0
+# s = 0
 
-# if a + b > 40:
-#     s = a + b
-# else:
-#     s = a - b
+# # if a + b > 40:
+# #     s = a + b
+# # else:
+# #     s = a - b
 
-s = a + b if a + b > 40 else a - b
+# s = a + b if a + b > 40 else a - b
 
-print(s)
+# print(s)
+
+
+
+
+
+
+# s = 0
+# high = 100
+
+# for x in range (1,11):
+#     s += high
+
+#     if x != 10:
+#         high /= 2  # high = high / 2
+#         s += high
+
+# print(s)
+
+
+
+
+
+
+name = "Alex"
+name2 = name
+
+name = "jack"
+name3 = name
+
+id(name),id(name2),id(name3)

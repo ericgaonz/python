@@ -35,22 +35,28 @@
 
 
 
-s = 0
-high = 100
+# s = 0
+# high = 100
 
-for x in range(1, 11):
-    s += high
+# for x in range(1, 11):
+#     s += high
 
-    if x != 10:
-        # calculate the half height
-        high /= 2
-        s += high
-
-
-print(s)
+#     if x != 10:
+#         # calculate the half height
+#         high /= 2
+#         s += high
 
 
+# print(s)
 
 
+
+for i in range (1, 10):
+    for k in range(1, 48 - i * 5):
+        print(' ', end = '')
+    for j in range (1, i + 1):
+        # print(f'{j} * {i} = {i * j}', end = '\t')
+        print(f'{j} * {i} = {i * j} ', end = '')
+    print()
 
 
