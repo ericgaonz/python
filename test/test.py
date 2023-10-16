@@ -1001,10 +1001,22 @@
 
 
 
-name = "Alex"
-name2 = name
+# name = "Kelly"
+# name2 = name
 
-name = "jack"
-name3 = name
+# name = "jack"
+# name3 = name
 
-id(name),id(name2),id(name3)
+# id(name),id(name2),id(name3)
+
+
+
+n = 1
+for i in range(1, 31, 2):
+    for k in range(1, 81 - n):
+        print(' ', end = '')
+    for j in range(1, i + 1):
+        print('.', end = '')
+    
+    n = n + 4
+    print()
