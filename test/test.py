@@ -1011,12 +1011,456 @@
 
 
 
-n = 1
-for i in range(1, 31, 2):
-    for k in range(1, 81 - n):
-        print(' ', end = '')
-    for j in range(1, i + 1):
-        print('.', end = '')
+# n = 1
+# for i in range(1, 31, 2):
+#     for k in range(1, 81 - n):
+#         print(' ', end = '')
+#     for j in range(1, i + 1):
+#         print('.', end = '')
     
-    n = n + 4
-    print()
+#     n = n + 4
+#     print()
+
+
+# n = 1
+# for i in range(-1, 21, 2):
+#     for j in range(1, 31 - n):
+#         print(' ', end = '')
+
+#     if i == 13:
+#         print('* * * * * * * *', end = '')
+#     else:
+#         if i != -1:
+#             print('*', end = '')
+
+#         for k in range(1, i + 1):
+#             print(' ', end = '')
+
+#         print('$', end = '')
+
+#     n= n + 1 
+
+
+#     print()
+
+
+# print('                             *')
+# print('                            *+*')
+# print('                           *+++*')
+# print('                          *+++++*')
+# print('                         *+++++++*')
+# print('                        *+++++++++*')
+# print('                       *+++++++++++*')
+# print('                      * * * * * * * *')
+# print('                     *+++++++++++++++*')
+# print('                    *+++++++++++++++++*')
+# print('                   *+++++++++++++++++++*')
+
+
+
+# n = 1
+# for i in range(-1, 21, 2):
+#     for j in range(1, 31 - n):
+#         print('-', end = '')
+
+#     if i != -1:
+#         print('*', end = '')
+
+#     for k in range(1, i + 1):
+#         print('=', end = '')
+
+#     print('$', end = '')
+
+#     n= n + 1 
+#     print()
+
+
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+# print('*******************************')
+
+# for i in range(16, -1, -1):
+#     # print(i)
+#     for j in range(1, 35):
+#         if j == 18 + i or j == 18 - i:
+#             print("*", end = '')
+#         else:
+#             print(" ", end = '')
+#     print('')
+
+
+# for i in range(0, 18):
+#     for j in range(0, 35):
+#         if j == i or j == 34 - i:
+#             print("*", end = '')
+#         else:
+#             print(" ", end = '')
+#     print('')
+
+
+
+# i = 3 
+# print(f"i = {i}, {type(i)}")
+
+# dic = {'a':'apple', 'b':'boy', 'c':'cat', 'd':'dog', 'e':'elephant'} 
+# print(f"dic = {dic}, {type(dic)}")
+
+# lst = ['books', 'movie', 'restaurant']
+# print(f"lst = {lst}, {type(lst)}")
+
+# f = 3.14159265358979328
+# print(f"f = {f}, {type(f)}")
+
+# name = "tom"
+# print(f"name = {name}, {type(name)}")
+
+# bol = True
+# print(f"bol = {bol}, {type(bol)}")
+
+# tup = ("apple", "orange", "strawberry")
+# print(f"tup = {tup}, {type(tup)}")
+
+# rang = range(1, 10)
+# print(f"rang = {rang}, {type(rang)}")
+
+
+# numbers = (1,4,5)
+
+# # a = numbers[0]
+# # b = numbers[1]
+# # c = numbers[2]
+# # print(a)
+# # print(b)
+# # print(c)
+
+# a,b,c = numbers
+# print(a,b,c)
+
+# person = {
+#     'name': 'Jacky',
+#     'age': 100,
+#     'wife': {
+#         'name':'Ami',
+#         'age': 4000
+#     },
+#     'elder daughter': {
+#         'name':'Amazing Person',
+#         'age': 13
+#     },
+#     'young daughter': {
+#         'name': 'Dumbpoo',
+#         'age': 0
+#     }
+# }
+
+
+# # print(person['elder daughter']['age'])
+# # print(person['young daughter']['name'])
+
+# name, age, wife, elderDaughter, youngDaughter = person
+
+# # print(name, age, wife, elderDaughter, youngDaughter)
+# print(person[name], person[age], person[wife], person[elderDaughter], person[youngDaughter])
+
+
+
+
+# define a dictionary its name is "family", it should includes all your family information.
+# e.g.
+# family = {
+#     "dad": {
+#         "name": "sdfsd",
+#         "age": "sdfsd",
+#         "hobby": "sdfsd",
+#         ...
+#     },
+#     "mum": {
+#         "name": "sdfsd",
+#         "age": "sdfsd",
+#         "hobby": "sdfsd",
+#         ...
+#     },
+#     ...
+# }
+
+# then print any information of your family.
+
+
+# family = {
+#     'dad': {
+#         'name': 'Jacky',
+#         'age': 40
+#     },
+#     'mum': {
+#         'name': 'Amy',
+#         'age': 43
+#     },
+#     'sister': {
+#         'name': 'Jacky',
+#         'age': 40
+#     },
+#     'grandpa': {
+#         'name': 'Jacky',
+#         'age': 40
+#     },
+#     'grandma': {
+#         'name': 'Jacky',
+#         'age': 40
+#     }
+# }
+
+# for person in family:
+#     print()
+
+
+# family = {
+#     'dad': {},
+#     'mum': {},
+#     'sister': {},
+#     'grandpa': {},
+#     'grandma': {}
+# }
+
+# for key in family:
+#     family[key]['name'] = input(f"Please input {key}'s name: ")
+#     family[key]['age'] = input(f"Please input {key}'s age: ")
+
+# print('\n\nName\tAge')
+# print('-----------')
+# for person in family:
+#     print(f"{family[person]['name']}\t{family[person]['age']}")
+# print('-----------')
+
+
+
+# 两个数字变量互换
+# a = 3
+# b = 5
+
+
+
+# '''
+# 类方法（可调类变量、可被实例调用、可被类调用）
+# 1、类方法通过@classmethod装饰器实现，只能访问类变量，不能访问实例变量；
+# 2、通过cls参数传递当前类对象，不需要实例化。
+# '''
+# class Car(object):
+#     name = 'BMW'
+#     def __init__(self, name):
+#         self.name = name
+#     @classmethod
+#     def run(cls,speed):
+#         print(cls.name,speed,'行驶')
+# # 访问方式1
+# c = Car("宝马")
+# c.run("100迈")
+# # 访问方式2
+# Car.run("100迈")
+
+
+
+
+# '''
+# 静态方法（可调类变量、可被实例调用、可被类调用）
+# 1、用 @staticmethod 装饰的不带 self 参数的方法；
+# 2、静态方法名义上归类管理，实际中在静态方法中无法访问类和实例中的任何属性；
+# 3、调用时并不需要传递类或实例。
+# '''
+# class Car(object):
+#     name = 'BMW'
+#     def __init__(self, name):
+#         self.name = name
+#     @staticmethod
+#     def run(speed):
+#         print(Car.name,speed,'行驶')
+		
+# # 访问方式1
+# c = Car("宝马")
+# c.run("100迈")
+# # 访问方式2
+# Car.run("100迈")
+
+
+
+# # 实例方法（可调类变量、可调实例变量、可被实例调用）
+# # 第一个参数强制为实例对象 self。
+# class Car(object):
+#     name = 'BMW'
+#     def __init__(self, name):
+#         self.name = name
+#     def run(self,speed):
+#         print(self.name,speed,'行驶')
+
+# # 访问
+# c = Car("宝马")
+# c.run("100迈")
+
+
+# def variable_fun(kind, *arguments, **keywords):
+#     print("friend : ", kind, ";")
+#     print("-" * 40)
+#     for arg in arguments:
+#         print(arg)
+#     print("-" * 40)
+#     for kw in keywords:
+#         print(kw, ":", keywords[kw])
+        
+# # # 函数调用
+# # variable_fun("xiaoming",
+# #              "hello xiaoming", "nice to meet you!",
+# #             mother="xiaoma",
+# #             father="xiaoba",
+# #             son="see you")
+            
+# # 输出结果
+# # first arg:  xiaoming ...
+# # ----------------------------------------
+# # hello 
+# # nice to meet you!
+# # ----------------------------------------
+# # mother : xiaoma
+# # father : xiaoba
+# # son : see you
+
+# list01 = ["hello xiaoming", "nice to meet you!"]
+# dict01 = {'mother': 'xiaoma', 'father': 'xiaoba', 'son': 'see you'}
+# variable_fun("xiaoming", *list01, **dict01)
+
+
+
+# # 借用官网例子
+# def key_fun(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+#     print("-- This key_fun wouldn't", action, end=' ')
+#     print("if you put", voltage, "volts through it.")
+#     print("-- Lovely plumage, the", type)
+#     print("-- It's", state, "!")
+
+# # 函数调用  
+# key_fun(1000)                                          # 1 positional argument
+# print("-" * 40)
+# key_fun(voltage=1000)                                  # 1 keyword argument
+# print("-" * 40)
+# key_fun(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
+# print("-" * 40)
+# key_fun(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
+# print("-" * 40)
+# key_fun('a million', 'bereft of life', 'jump')         # 3 positional arguments
+# print("-" * 40)
+# key_fun('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+
+
+
+# from math import factorial
+
+# def square(n):
+#     return n ** 2
+
+# # 使用python自带数学函数
+# facMap = map(factorial, list(range(10)))
+# print(list(facMap))
+# # print out: [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]
+
+# # 使用自定义函数
+# squareMap = map(square, list(range(10)))
+# print(list(squareMap))
+# # print out: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+
+
+
+# # 注意，现在 reduce() 函数已经放入到functools包中。
+# from functools import reduce
+
+# result = reduce(lambda x, y: x + y, [1, 2, 3, 4, 5])
+
+# print(result)
+# # print out 15
+
+
+# # 设定初始参数：
+# s = reduce(lambda x, y: x + y, ['1', '2', '3', '4', '5'], "数字 = ")
+
+# print(s)
+# # print out：数字 = 12345
+
+
+
+# def boy(n):
+#     if n % 2 == 0:
+#         return True
+#     return False
+
+# # 自定义函数
+# filterList = filter(boy, list(range(20)))
+
+# print(list(filterList))
+# # print out: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+# # 自定义函数
+# filterList2 = filter(lambda n: n % 2 == 0, list(range(20)))
+
+# print(list(filterList2))
+# # print out: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+
+
+
+# print('Hello')
+# a = len('hello') #length
+# print(a)
+
+# print(len('hello'))
+
+# myStr = input('Please input a string: ')
+
+# sum = 0
+# for char in myStr:
+#     sum = sum + 1
+
+# print(sum)
+
+
+# def my_len(str):
+#     sum = 0
+#     for char in str:
+#         sum = sum + 1
+
+#     return sum
+
+
+# myStr = input('Please input a string: ')
+# print(len(myStr))
+# print(my_len(myStr))
+
+
+
+# def add(num1, num2):
+#     return num1 + num2
+
+# def multiply(num1, num2):
+#     return num1 * num2
+
+
+# print(add(6, 7))
+# print(multiply(6, 7))
+
+
+
+
+
+print_5_times('hello')
+print_5_times('Christna')
+print_5_times('Kelly')

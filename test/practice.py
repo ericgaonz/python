@@ -61,14 +61,24 @@
 
 
 
-data = [5,8,4,1]
-#实现冒泡排序
-for i in range(len(data)-1):
-    for j in range(len(data)-i-1):
-        if(data[j]>data[j+1]):
-            data[j],data[j+1] = data[j+1],data[j]
+data = [5,8,4,1,11,66,7,9,3]
 
-print("排序后：",data)
+
+
+#实现冒泡排序
+def bubble(values):
+    for i in range(len(values)-1):
+        for j in range(len(values)-i-1):
+            if(values[j]>values[j+1]):
+                values[j],values[j+1] = values[j+1],values[j]
+    
+    return values
+
+
+
+sorted = bubble(data)
+
+print("排序后：", sorted)
 
 
 
