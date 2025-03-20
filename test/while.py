@@ -1,5 +1,3 @@
-
-
 i = 1
 while i <= 5:
   num = float(input('Please input the value of number {:d}: '.format(i)))

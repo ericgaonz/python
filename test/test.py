@@ -1461,6 +1461,1077 @@
 
 
 
-print_5_times('hello')
-print_5_times('Christna')
-print_5_times('Kelly')
+# def repeat(content, times):
+#     # i = 1
+#     # while (i <= times):
+#     #     print(content)
+#     #     i = i + 1
+
+
+#     for i in range(times):
+#         print(content)
+
+
+# repeat('Eric', 5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def ask_ok(prompt, retries=4, reminder='Please try again!'):
+#     while True:
+#         reply = input(prompt)
+#         if reply in {'y', 'ye', 'yes'}:
+#             return True
+#         if reply in {'n', 'no', 'nop', 'nope'}:
+#             return False
+#         retries = retries - 1
+#         if retries < 0:
+#             raise ValueError('invalid user response')
+#         print(reminder)
+
+
+# # #只给出必选实参：
+# # print(ask_ok('Do you really want to quit? '))
+
+# # #给出一个可选实参：
+# # print(ask_ok('OK to overwrite the file? ', 2))
+
+# # #给出所有实参：
+# print(ask_ok('OK to overwrite the file? ', 3, 'Come on, only yes or no!'))
+
+
+
+
+
+# def factorial(number):
+#     s = 1
+#     for num in range(number, 0, -1): # range(start, end, step)
+#         s = s * num
+
+#     return s
+
+
+# n = int(input('Please input a number: '))
+# f = factorial(n)
+# print('f = ', f)
+
+# print(list(range(1, 15)))
+
+
+
+#def f(a, L=[]):
+#    L.append(a)
+#    return L
+#
+#print(f(1))
+#print(f(2))
+#print(f(3))
+
+# def f(a, L=None):
+#     print(L)
+#     if L is None:
+#         L = []
+#     L.append(a)
+#     return L
+
+# a = f(1)
+# print(a)
+
+# b = f(2, a)
+# print(b)
+
+# c = f(3, b)
+# print(c)
+
+
+
+
+
+# def repeat(myname = 'christina', times = 5):
+#     for c in range(times):
+#         print(myname)
+
+# # repeat(times = 4, myname = 'abc')
+# repeat(3, 'aaa')
+
+
+# def standard_arg(arg):
+#     print(arg)
+
+# standard_arg(2)
+# standard_arg(arg=2)
+
+
+# def pos_only_arg(arg, /):
+#     print(arg)
+
+# pos_only_arg(2)
+# # pos_only_arg(arg=2)
+
+
+# def kwd_only_arg(*, arg):
+#     print(arg)
+
+# # kwd_only_arg(2)
+# kwd_only_arg(arg=2)
+
+
+
+# def combined_example(pos_only, /, standard, *, kwd_only):
+#     print(pos_only, standard, kwd_only)
+
+
+# combined_example(1, 2, kwd_only=3)
+# combined_example(1, standard=2, kwd_only=3)
+
+# 1, int 1,2,3,4
+# 2, str 'tom', 'sdfs'
+# 3, float 3.5, 6.77777
+# 4, dict {name='tom', age=23}
+# 5, list [2,4,5,'sdfsd']
+# 6, tuple (1,3,4,'sdfs')
+# 7, bool true, false
+
+
+
+
+# def test(**arg):         # dict parameters
+#     print(type(arg))
+#     print(arg)
+
+
+# test(name='tom', age=88, email='test@gmail.com')
+
+
+# def test2(*arg):         # tuple parameters
+#     print(type(arg))
+#     print(arg)
+
+
+# test2('2222', True, 3, (2,5,7))   # ('2222', True, 3, (2,5,7))
+
+
+# def test(*arg, **args):
+#     for value in arg:
+#         print('- ', value)
+    
+#     for key, value in args.items():
+#         print(key, ": ", value)
+
+# test(2,3,4,5,'end', name='tom', age=88, email='test@gmail.com')
+
+# def getMaxScoreKey(**data):
+#     max = data.values()
+#     print(data)
+#     # result = data.keys()[0]
+#     # for key,value in data:
+#     #     if max > value:
+#     #         max = value
+#     #         result = key
+
+#     # return result
+
+
+# print(getMaxScoreKey(tom=23,jack=88,kelly=99,eric=22))
+
+
+# lst = []
+
+# lst.append('apple')
+# lst.append('pear')
+# lst.insert(1, 'pineapple')
+# lst.append('kiwi friut')
+
+# lst.extend(['strawberry', 'blueberry', 'pear', 'blackberry'])
+
+# # lst.remove('pear')
+# # lst.pop()
+# # lst.pop(1)
+
+# # lst.clear()
+# # lst.append('pear')
+
+# # print(len(lst))
+# # idx = lst.index('pear', 3, 7)
+# # print(idx)
+
+# lst.sort()
+# # lst.reverse()
+
+# # lst.remove('blueberry')
+# # lst.pop(2)
+# del(lst[2])
+
+# print(lst)
+
+
+
+# --------------------------------
+# cars = ['Ford', 'BMW', 'Volvo']
+
+# # cars.sort()
+# cars.sort(reverse=True)
+
+
+
+
+#Syntax
+#list.sort(reverse=True|False, key=myFunc)
+
+# def myFunc(e):
+#   return len(e)
+
+# cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+# cars.sort(key=myFunc, reverse=True)
+
+
+# def myFunc(e):
+#   return e['year']
+
+# cars = [
+#   {'car': 'Ford', 'year': 2005},
+#   {'car': 'Mitsubishi', 'year': 2000},
+#   {'car': 'BMW', 'year': 2019},
+#   {'car': 'VW', 'year': 2011}
+# ]
+
+# cars.sort(key=myFunc)
+
+
+# print(cars)
+
+
+# def myFunc(e):
+#   return e['math'] + e['English'] + e['Chinese']
+
+# students = [
+#   {'name': 'Tom', 'math': 66, 'English': 88, 'Chinese': 80},
+#   {'name': 'Kelly', 'math': 55, 'English': 99, 'Chinese': 30},
+#   {'name': 'Christna', 'math': 99, 'English': 22, 'Chinese': 95},
+#   {'name': 'Jacky', 'math': 0, 'English': 22, 'Chinese': 99},
+# ]
+
+# students.sort(key=myFunc, reverse=True)
+# print(students)
+
+# lst = []
+# for x in range(10):
+#     lst.append(x+x+1)
+
+# print(lst)
+
+
+# comprehension
+# lst = [x+x+1 for x in range(10)]
+# print(lst)
+
+
+
+# lst = []
+# for x in range(10):
+#     if x % 2 == 0:
+#         lst.append(x*x)
+
+# print(lst)
+
+# lst = [x * x for x in range(10) if x % 2 == 0]
+# print(lst)
+
+
+#把1到100之间的所有5的倍数的立方值保存在一个列表里打印出来。
+#print out a list of all cubic number of Multiples of 5 between 1 and 100.
+
+#e.g.
+# [1,2,3,4,5,6,7,8,9,10,11..........100]
+# [5,10,15.....100]
+# [5*5*5,10*10*10,....100*100*100]
+
+
+# lst = [x * x * x for x in range(1,101) if x % 5 == 0]
+# print(lst)
+
+
+# def myfunc(number):
+#     # lst = [x * x * x for x in range(1,number+1) if x % 5 == 0]
+#     lst = []
+#     for x in range(1, number + 1):
+#         if x % 5 == 0:
+#             lst.append(x * x * x)
+#     print(lst)
+
+
+# myfunc(100)
+
+
+# 偏函数 (partial function)
+
+# from functools import partial
+
+# def display(name,age):
+#     print("name:",name,"age:",age)
+
+# GaryFun = partial(display,name = 'Gary')
+
+# GaryFun(age = 13)
+
+
+# from functools import partial
+
+# def mod( n, m ):
+#   return n % m
+
+# print(mod(100, 7))
+
+# mod_by_100 = partial(mod, 100)
+# print(mod_by_100(7))
+
+
+
+# print(mod(51, 4))
+
+# mod_by_51 = partial(mod, 51)
+# print(mod_by_51(4))
+
+
+
+# comprehension
+# values = [x**2 for x in range(1, 6)]
+# print(values)
+
+# values = []
+# for x in range(1, 6):
+#     values.append(x**2)
+
+# print(values)
+
+
+# values = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+# print(values)
+
+
+# values = []
+
+# for x in [1,2,3]:
+#   for y in [3,1,4]:
+#     if x != y:
+#       values.append((x, y))
+
+# print(values)
+
+
+# 1 * 1 = 1 
+# 1 * 2 = 2  2 * 2 = 4
+# 1 * 3 = 3  2 * 3 = 6  3 * 3 = 9
+# .....
+
+
+# for i in range(1, 10):
+#     for j in range(1, i + 1):
+#         print('%d * %d = %d\t' % (j, i, i * j), end='')
+#     print()
+
+
+
+# vec = [-4, -2, 0, 2, 4]
+# # print([x*2 for x in vec])
+# print([x**2 for x in vec])
+# print([x for x in vec if x >= 0])
+# print([x**3 for x in vec if x >= 0])
+# print([abs(x) for x in vec])
+
+
+# freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
+# print([weapon.strip() for weapon in freshfruit])
+# # print([weapon.lstrip().rstrip() for weapon in freshfruit])
+
+# #[(0, 0, 0),(1,1,1),(2,4,8),(3,9,27)...]
+# print([(x, x**2, x**3) for x in range(6)])
+
+# print([[x, x**2] for x in range(6)])
+
+
+
+# vec = [[1,2,3], [4,5,6], [7,8,9]]
+# print([num for elem in vec for num in elem])
+
+# values = []
+# for elem in vec:
+#   for num in elem:
+#     values.append(num)
+# print(values)
+
+
+
+# scores = {'math': 98, 'English': 88}
+# for k, v in scores.items():
+#     # print(k, v)
+#     print("%s:%d" % (k, v))
+
+# lst = ['tic', 'tac', 'toe']
+# for i, v in enumerate(lst):
+#     print(i, v)
+
+
+# print(lst[2])
+
+
+
+# lst = ['000','101','202','301','402','504','608','709','807','909']
+# for i, v in enumerate(lst):
+#     if (i % 2 == 0):
+#         print(i, v)
+#     else:
+#         print(i, 'null')
+
+
+
+
+# questions = ['name', 'age', 'favorite color']
+# answers = ['tom', '23', 'blue']
+# for q, a in zip(questions, answers):
+#     # print('{0}?  Answer:{1}'.format(q, a))
+#     print('%s?  Answer:%s' % (q, a))
+
+# #range(start, end, step)
+# for i in reversed(range(1, 10, 2)):
+#     print(i)
+
+# basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+# for i in sorted(basket):
+#     print(i)
+
+
+# basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+# for f in sorted(set(basket)):
+#     print(f)
+
+
+# import math
+
+# raw_data = [56.2, float('NaN'), 51.7, 55.3, 52.5, float('NaN'), 47.8]
+# filtered_data = []
+# for value in raw_data:
+#     if not math.isnan(value):
+#         filtered_data.append(value)
+
+# print(filtered_data)
+
+
+# #HOMEWORK:
+
+# # 学生名单 (Student names list)
+# names = ['Tom', 'Kellay', 'Eric', 'Jacky', 'Amy', 'Christina', 'Aurora']
+# # 每个学生的选课列表，按顺序一对一 (Each students chose subjects, one by one mapping in order)
+# subjects = [
+#     ['Math'],
+#     ['Math', 'English', 'Music'],
+#     ['English', 'Music'],
+#     ['Math', 'English'],
+#     ['Math', 'Music'],
+#     ['Math', 'English', 'Music'],
+#     ['Music']
+# ]
+
+# # 1，把所有学数学，英语或者音乐的学生名单，单独保存在三个set变量中，并打印到屏幕上(Save all the math, English, or music students individually into three set variables and print it on the screen.)。
+# # 2，找到最简单的方法，把所有选择了3门课程的学生名单也打印出来(Find the easiest/quick way to print out a list of all the students who have chosen the 3 subjects.)。
+
+# math_students = set()
+# english_students = set()
+# music_students = set()
+# for name, subs in zip(names, subjects):
+#     if 'Math' in subs:
+#         math_students.add(name)
+#     if 'English' in subs:
+#         english_students.add(name)
+#     if 'Music' in subs:
+#         music_students.add(name)
+
+# print('Math:', math_students)
+# print('English:', english_students)
+# print('Music:', music_students)
+
+# print('All:', math_students & english_students & music_students)
+
+
+
+
+
+
+
+
+
+
+# # 学生名单 (Student names list)
+# names = ['Tom', 'Kellay', 'Eric', 'Jacky', 'Amy', 'Christina', 'Aurora']
+# # 每个学生的选课列表，按顺序一对一 (Each students chose subjects, one by one mapping in order)
+# subjects = [
+#     ['Math'],
+#     ['Math', 'English', 'Music'],
+#     ['English', 'Music'],
+#     ['Math', 'English'],
+#     ['Math', 'Music'],
+#     ['Math', 'English', 'Music'],
+#     ['Music']
+# ]
+# math_students = set([names[i] for i in range(len(subjects)) if 'Math' in subjects[i]])
+
+# math_students = set()
+# math_students = set([])
+# math_students = set([
+#   names[i] 
+#   for i in range(len(subjects)) 
+#      if 'Math' in subjects[i]
+# ])
+
+# math_students = set()
+# for i in range(len(subjects)): # 0 - 6
+#     if ('Math' in subjects[i]):
+#         math_students.add(names[i])          
+
+
+
+
+
+
+# import mymath
+
+# # print(mymath.plus(3,6))
+# # print(mymath.minus(3,6))
+# # print(mymath.devide(6,3))
+# # print(mymath.multiple(3,6))
+# # print(mymath.mod(6,3))
+
+
+# # mymath.fib(100)
+
+# lst = mymath.fib2(100)
+# print(lst)
+
+
+# import math
+
+# print(math.pi)
+# print(math.sqrt(4))
+
+
+
+# import mymath
+
+# # # print(mymath.plus(8,3))
+
+# print(mymath.PI)
+
+
+# import myLib
+
+# # print(type(myLib.person1))
+
+# print(myLib.person1['name'])
+
+
+
+# # import mymath
+# from mymath import fib, plus
+
+# fib(11)
+# print(plus(3,9))
+
+# # import mymath
+# from mymath import *
+# fib(11)
+# print(plus(3,9))
+
+
+# # import mymath
+# import mymath as mm
+# mm.fib(11)
+
+
+# from mymath import fib, plus
+# from mymath import fib as myfib, plus as myplus
+# from yourmath import fib as yourfib, plus as yourplus
+
+# myfib(11)
+# yourfib(11)
+# print(myplus(3,9))
+# print(yourplus(3,9))
+
+
+# f = open('while.py', 'r', encoding="utf-8")
+# # read_data = f.read()
+# data = f.readline()
+# print(data)
+
+# with open('while.py', 'r') as file:
+#     content = file.read()
+#     print(content)
+
+# f = open('test_file.py', 'w', encoding="utf-8")
+# f.write('This is a test\n')
+# f.close()
+
+# with open('test_file.py', 'r') as file:
+#     content = file.read()
+#     print(content)
+# with open('test_file.py', 'r') as file:
+#     for i in range(5):
+#         line = file.readline()
+#         print(line)
+
+
+# read_data = f.read()
+# data = f.readline()
+# print(data)
+
+
+# f = open('test_workfile', 'w')
+# f.write('11111111111111')
+# f = open('test_workfile', 'w')
+# f.write('abcdefghijklmnopq')
+# f.close()
+
+# f = open('test_workfile', 'r')
+# f.seek(10)
+# print(f.read(5))
+# print(f.read(10))
+
+# f = open('test_workfile', 'ab') # abcdefghijklmnopqrstuvwxyz
+# f.seek(-3, 2)  # f.seek(offset, whence) 
+# print(f.read(1))
+
+
+# 指定目录读写文件
+# homework：input many students names, ages, emails and save all into a file.
+
+# -> % please input the number of students: 3
+# -> % please input student1's name: Tom
+# -> % please input student1's age: 23
+# -> % please input student1's email: ttt@tgmail.com
+# -> % please input student2's name: Tomson
+# -> % please input student2's age: 233
+# -> % please input student3's email: ttt0002@tgmail.com
+# ....
+
+# write all information into a file.
+
+
+
+
+
+
+# f = open('students.csv', 'w')
+
+# number = int(input('please input the number of students: '))
+# for i in range(number):
+#     name = input('please input student{0}\'s name: '.format(i + 1))
+#     age = input('please input student{0}\'s age: '.format(i + 1))
+#     email = input('please input student{0}\'s email: '.format(i + 1))
+
+#     f.write('{0},{1},{2}\n'.format(name, age, email))
+
+# f.close()
+
+# print()
+# print()
+# print('File contents:')
+# with open('students.csv', 'r') as file:
+#     content = file.read()
+#     print(content)
+
+# f = open('students.csv', 'r')
+# content = f.read()
+# print(content)
+# f.close()
+
+
+
+# with open('students.csv', 'r') as file:
+#     for line in file:
+#         print(line, end='')
+
+# f = open('students.csv', 'r')
+# for line in f:
+#     print(line, end='')
+# f.close()
+
+
+
+# def divide(x, y):
+#     result = x / y
+#     print(result)
+
+# divide(42, 0)
+
+# def divide(x, y):
+#     try:
+#         result = x / y
+#         print("result is", result)
+#     except ZeroDivisionError:
+#         print("division by zero!")
+#     except TypeError:
+#         print("division type is wrong!")
+#     except:
+#         print("Unknown exception occurred")
+#     else:
+#         print("Success")
+#     finally:
+#         print("-- END --")
+
+# divide(2, 1)
+# print()
+# divide(2, 0)
+# print()
+# divide("2", "1")
+
+# Results:
+# result is 2.0
+# Success
+# -- END --
+
+# division by zero!
+# -- END --
+
+# Unknown exception occurred
+# -- END --
+
+
+
+
+# class Dog:
+
+#     kind = 'canine'         # 类变量被所有实例所共享
+
+#     def __init__(self, name):
+#         self.name = name    # 实例变量为每个实例所独有
+
+#     def set_kind(self, kind):
+#         self.kind = kind
+
+# d = Dog('Fido')
+# d.set_kind('ttt')
+
+
+# print(d.kind)
+
+
+
+
+# class Person:
+#     name = 'no name'
+#     age = 10
+#     iq = 90
+#     birthday = '2001-01-01'
+
+#     def __init__(self, name, age = 99):
+#         self.name = name
+#         self.age = age
+
+#     def print_info(self):
+#         print(self.name, self.age, self.iq, self.birthday)
+
+#     def set_age(self, age):
+#         self.age = age
+
+#     def set_iq(self, iq):
+#         self.iq = iq
+
+#     def set_birthday(self, birthday):
+#         self.birthday = birthday
+
+
+# person1 = Person('Tom')
+# person1.set_age(18)
+# person1.set_iq(10)
+# person1.set_birthday('2022-12-12')
+# person1.birthday = '2002-12-12'
+# person1.print_info()
+
+
+# person2 = Person('Kelly', 11)
+# person2.print_info()
+
+
+
+
+# class Dog:
+
+#     kind = 'canine'         # 类变量被所有实例所共享
+#     # leg_number = 4
+
+#     def __init__(self, name):
+#         self.name = name    # 实例变量为每个实例所独有
+#         self.kind = ''
+
+
+# dog1 = Dog('Fido')
+# dog2 = Dog('Buddy')
+
+# # print(dog1.name)
+# # print(dog2.name)
+
+# print(dog1.kind)
+# print(dog2.kind)
+
+# print(id(dog1.kind))
+# print(id(dog2.kind))
+
+# dog2.kind = 'poodle'
+
+# print(dog1.kind)
+# print(dog2.kind)
+
+# print(id(dog1.kind))
+# print(id(dog2.kind))
+
+
+
+
+
+# class Dog:
+
+#     # tricks = []             # 类变量的错误用法
+
+#     def __init__(self, name):
+#         self.name = name
+#         self.tricks = []    # 为每个 Dog 实例新建一个空列表
+
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
+
+
+
+
+# dog1 = Dog('Fido')
+# dog2 = Dog('Buddy')
+
+# dog1.add_trick('roll over')
+# dog1.add_trick('play thx')
+
+# dog2.add_trick('play dead')
+
+# print(dog1.tricks)
+# print(dog2.tricks)
+
+
+
+
+
+# class CLanguage:
+#     # 下面定义了2个类变量
+#     name = "C语言中文网"
+#     add = "http://c.biancheng.net"
+
+#     # 下面定义了一个say实例方法
+#     def say(self, content):
+#         print(content)
+
+
+
+
+#使用类名直接调用
+# print(CLanguage.name)
+# print(CLanguage.add)
+
+# #修改类变量的值
+# CLanguage.name = "Python教程"
+# CLanguage.add = "http://c.biancheng.net/python"
+# print(CLanguage.name)
+# print(CLanguage.add)
+
+# create a class object
+# clang = CLanguage()
+# print(clang.name)
+# print(clang.add)
+
+
+
+
+
+
+
+# print("-- 修改前，各类对象中类变量的值 --")
+# a = CLanguage()
+# print(a.name)
+# print(a.add)
+# b = CLanguage()
+# print(b.name)
+# print(b.add)
+# print("-- END --")
+
+# print("-- 修改后，各类对象中类变量的值 --")
+# CLanguage.name = "tttttt"
+# CLanguage.add = "python"
+# print(a.name)
+# print(a.add)
+# print(b.name)
+# print(b.add)
+# print("-- END --")
+
+
+
+
+# class Language :
+#     name = "default name"
+#     address = "default address"
+#     def __init__(self, name, address):
+#         self.address = address
+
+#     def display(self):
+#         print(self.name, self.address)
+
+
+# a = Language("AAAA", "A address") #automatically
+# print(a.name)
+# print(id(a.name))
+# print(a.address)
+# print(id(a.address))
+
+# b = Language("BBBB", "B address")
+# print(b.name)
+# print(id(b.name))
+# print(b.address)
+# print(id(b.address))
+
+# # c = Language("CCCC", "C address")
+# # print(c.name)
+# # print(id(c.name))
+# # print(c.address)
+# # print(id(c.address))
+
+# print(Language.name)
+# print(id(Language.name))
+# print(Language.address)
+# print(id(Language.address))
+
+
+
+# class CLanguage:
+#     #类构造方法，也属于实例方法
+#     def __init__(self):
+#         self.name = "C语言中文网"
+#         self.add = "http://c.biancheng.net"
+#     # 下面定义了一个say实例方法
+#     def say(self):
+#         print("正在调用 say() 实例方法")
+
+
+
+
+# class CLanguage:
+#     #类构造方法，也属于实例方法
+#     def __init__(self):
+#         self.name = "C语言中文网"
+#         self.add = "http://c.biancheng.net"
+#     #下面定义了一个类方法
+#     @classmethod
+#     def info(cls):
+#         print("正在调用类方法",cls)
+
+
+# class CLanguage:
+#     # 静态方法
+#     @staticmethod
+#     def info(name,add):
+#         print(name,add)
+
+
+
+# userName = input("Please enter your name: ")
+
+# if all(x.isalpha() or x.isspace() for x in userName):
+#     print("Welcome %s!" % userName)
+# else:
+#     print("Only alphabetical letters and spaces are allowed in your names.")
+
+
+
+# x.isalpha() and x.isspace() for x in userName
+
+
+# print([x.isalpha() or x.isspace() for x in userName])
+
+
+
+# print('  || = = = = = = = = = = = = = =')
+# print('  |  /                 |')
+# print('  |/                   |')
+# print('  ||                 {$ $}')
+# print('  ||               /{  :  }\\')
+# print('  ||                  |||')
+# print('  ||                 <===>')
+# print('  ||')
+# print('  ||')
+# print('  ||')
+# print('  ||')
+# print('  ||')
+
+
+# def draw_tree(times):
+#     if times <= 3:
+#         draw_repeat_part(times)
+
+#     if times == 4:
+#         print('  || = =')
+#         print('  |  /')
+#         print('  |/')
+#         print('  ||')
+#         draw_repeat_part(3)
+
+#     if times == 5:
+#         print('  || = = = = = = = = = = = = = =')
+#         print('  |  /')
+#         print('  |/')
+#         print('  ||')
+#         draw_repeat_part(3)
+    
+#     if times == 6:
+#         print('  || = = = = = = = = = = = = = =')
+#         print('  |  /                 |')
+#         print('  |/                   |')
+#         print('  ||                 {$ $}')
+#         draw_repeat_part(3)
+
+#     if times == 7:
+#         print('  || = = = = = = = = = = = = = =')
+#         print('  |  /                 |')
+#         print('  |/                   |')
+#         print('  ||                 {$ $}')
+#         print('  ||               /{  :  }\\')
+#         print('  ||                  |||')
+#         print('  ||                 <===>')
+#         draw_repeat_part(2)
+
+# def draw_repeat_part(times):
+#     for i in range(times):
+#         print('  ||')
+#         print('  ||')
+#         print('  ||')
+
+
+# draw_tree(7)
+
+
+# for i, letter in enumerate('PoPabc'):
+#     print(i, letter)
+
+
+indices = [i for i, letter in enumerate('PoPabca') if letter == 'a']
+print(indices)
+
+
+new_state = list('_______')
+print(new_state)
+for i in indices:
+    new_state[i] = 'a'
+
+print(new_state)
+
